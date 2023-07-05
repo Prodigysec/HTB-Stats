@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background and text colors */
+  body {
+    background-color: #272e36; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .hero {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    background-color: #9FEF00;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #86c900;
+  }
