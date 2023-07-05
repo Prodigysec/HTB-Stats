@@ -3,33 +3,32 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* Set background and text colors */
-  body {
+
+body {
     background-color: #272e36; 
     color: #fff;
     font-family: Arial, sans-serif;
-  }
-  
-  /* Header Styles */
-  .hero {
+}
+
+
+.hero {
     display: flex;
     height: 400px;
     align-items: center;
     justify-content: center;
-  }
-  
-  .hero-title {
+}
+
+.hero-title {
     font-size: 3rem;
     margin-bottom: 1rem;
-  }
-  
-  .hero-description {
+}
+
+.hero-description {
     font-size: 1.5rem;
     margin-bottom: 5rem;
-  }
-  
-  .hero-button {
+}
+
+.hero-button {
     display: inline-block;
     background-color: #9FEF00;
     color: #fff;
@@ -38,8 +37,46 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
-  }
-  
-  .hero-button:hover {
+}
+
+.hero-button:hover {
     background-color: #86c900;
-  }
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.feature {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #000;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #ccc;
+}
