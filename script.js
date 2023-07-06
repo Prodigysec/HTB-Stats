@@ -145,5 +145,14 @@ document.addEventListener('DOMContentLoaded', async function () {
             chunkContainer.style.display = 'block';
         }
         displayChunk(currentChunk, 20);
+
+        // Create event listener for the "Home" button
+        homeButton.addEventListener('click', function () {
+            mainSection.remove();
+
+            document.body.appendChild(header);
+            document.body.appendChild(section);
+            document.body.appendChild(footer);
+        });
     }
 });
