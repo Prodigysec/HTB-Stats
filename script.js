@@ -45,5 +45,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         header.remove();
         section.remove();
         footer.remove();
+
+        displayData(data);
+
     });
+
+    function displayData(data) {
+
+    }
 });
