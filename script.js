@@ -34,8 +34,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         return users;
     };
 
-    getStartedButton.addEventListener('click', function (event) {
+    const fetchDataPromise = fetchUsers();
+
+    getStartedButton.addEventListener('click', async function (event) {
         event.preventDefault();
+
+        const data = await fetchDataPromise;
 
         // Remove the header, section and footer
         header.remove();
