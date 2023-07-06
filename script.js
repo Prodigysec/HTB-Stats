@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                     chunkContainer.appendChild(userElement);
                 }
             }));
-
+            chunkContainer.style.display = 'block';
         }
-
+        displayChunk(currentChunk, 20);
     }
 });
