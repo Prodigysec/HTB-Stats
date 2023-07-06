@@ -94,6 +94,26 @@ document.addEventListener('DOMContentLoaded', async function () {
             const chunkContainer = document.createElement('tbody');
             resultsContainer.appendChild(chunkContainer);
 
+            // Display the fetched data
+            await Promise.all(chunkData.map(async function (user) {
+                // console.log(user);
+
+                const dataGroup = [user.profile.rank, user.profile.name, user.profile.points]
+                const userElement = document.createElement('tr');
+                if (!user.profile.id || user.profile.id === undefined) {
+                    return;
+
+                } else {
+                    for (let index = 0; index < 3; index++) {
+                        const tableData = document.createElement('td');
+                        tableData.textContent = dataGroup[index];
+                        userElement.appendChild(tableData);
+                    }
+                    userElement.classList.add('mem-id', user.profile.id);
+                    chunkContainer.appendChild(userElement);
+                }
+            }));
+
         }
 
     }
