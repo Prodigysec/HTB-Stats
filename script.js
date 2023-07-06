@@ -85,5 +85,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             tableRow.appendChild(tableHeader);
         }
 
+        let currentChunk = 1;
+
+        async function displayChunk(chunkIndex, chunkSize) {
+            const startIndex = (chunkIndex - 1) * chunkSize;
+            const chunkData = data.slice(startIndex, startIndex + chunkSize);
+
+            const chunkContainer = document.createElement('tbody');
+            resultsContainer.appendChild(chunkContainer);
+
+        }
+
     }
 });
