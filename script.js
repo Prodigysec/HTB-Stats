@@ -1,14 +1,26 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
     const header = document.querySelector('header.hero');
     const section = document.querySelector('section.features');
     const getStartedButton = document.querySelector('.hero-button');
     const footer = document.querySelector('.footer');
 
     // Perform API request asyncronously
+    const fetchUsers = async () => {
+        const users = [];
+        let id = 300;
 
-    // Fetch data on page load
+        const fetchPage = async (id) => {
+            const response = await fetch(`https://www.hackthebox.com/api/v4/user/profile/basic/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${window.env.YOUR_AUTH_TOKEN}`,
+                },
+            });
+            const data = await response.json();
+            return data;
+        };
 
-    // Add eventlistener to button
+    };
+
     getStartedButton.addEventListener('click', function (event) {
         event.preventDefault();
 
