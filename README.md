@@ -12,3 +12,9 @@ A web application where HackTheBox users can track their global ranking, compare
 2. Open a terminal on your local environment and clone the repo.
 3. Install Live Server extension for Vs Code and ensure it is running.
 4. Open your browser and enter the following url: http://127.0.0.1:5500/
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- HTB API
