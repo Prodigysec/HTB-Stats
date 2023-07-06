@@ -106,3 +106,8 @@ body {
 .header-section button:hover {
     background-color: #86c900;
 }
+
+#resultsContainer {
+    width: 100%;
+    border-collapse: collapse;
+}
