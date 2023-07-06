@@ -111,3 +111,15 @@ body {
     width: 100%;
     border-collapse: collapse;
 }
+
+#resultsContainer th {
+    background-color: #9FEF00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+#resultsContainer td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
