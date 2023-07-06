@@ -19,6 +19,19 @@ document.addEventListener('DOMContentLoaded', async function () {
             return data;
         };
 
+        while (users.length < 20) {
+            const data = await fetchPage(id);
+            if (data.message &&
+                data.message.user_id &&
+                data.message.user_id[0] === 'The selected user id is invalid.'
+            ) {// Invalid user ID, skip and continue to the next page
+                id++;
+                continue;
+            }
+            users.push(data);
+            id++;
+        }
+        return users;
     };
 
     getStartedButton.addEventListener('click', function (event) {
