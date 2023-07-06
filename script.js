@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const tableRow = document.createElement('tr');
         topThead.appendChild(tableRow)
 
-        const tableRowTitles = ["Rank", "Name", "Points"];
+        const tableRowTitles = ["Name", "Rank", "Points"];
         for (let index = 0; index < 3; index++) {
             const tableHeader = document.createElement('th');
             tableHeader.className = "text-center";
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             await Promise.all(chunkData.map(async function (user) {
                 // console.log(user);
 
-                const dataGroup = [user.profile.rank, user.profile.name, user.profile.points]
+                const dataGroup = [user.profile.name, user.profile.rank, user.profile.points]
                 const userElement = document.createElement('tr');
                 if (!user.profile.id || user.profile.id === undefined) {
                     return;
