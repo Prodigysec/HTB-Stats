@@ -127,3 +127,11 @@ body {
 #resultsContainer tbody tr:nth-child(even) {
     background-color: #20354d;
 }
+
+svg {
+    fill: #ccb800;
+    height: 70px;
+    align-items: center;
+    padding-top: 25px;
+    cursor: pointer;
+}
