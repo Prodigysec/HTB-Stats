@@ -66,5 +66,24 @@ document.addEventListener('DOMContentLoaded', async function () {
         const compareButton = document.createElement('button');
         compareButton.textContent = 'Compare';
         headerSection.appendChild(compareButton);
+
+        const resultsContainer = document.createElement('table');
+        resultsContainer.id = 'resultsContainer';
+        mainSection.appendChild(resultsContainer);
+
+        const topThead = document.createElement('thead');
+        resultsContainer.appendChild(topThead);
+
+        const tableRow = document.createElement('tr');
+        topThead.appendChild(tableRow)
+
+        const tableRowTitles = ["Rank", "Name", "Points"];
+        for (let index = 0; index < 3; index++) {
+            const tableHeader = document.createElement('th');
+            tableHeader.className = "text-center";
+            tableHeader.textContent = tableRowTitles[index];
+            tableRow.appendChild(tableHeader);
+        }
+
     }
 });
