@@ -51,6 +51,20 @@ document.addEventListener('DOMContentLoaded', async function () {
     });
 
     function displayData(data) {
+        const mainSection = document.createElement('section');
+        mainSection.classList.add('main-section');
+        document.body.appendChild(mainSection);
 
+        const headerSection = document.createElement('header');
+        headerSection.classList.add('header-section');
+        mainSection.appendChild(headerSection);
+
+        const homeButton = document.createElement('button');
+        homeButton.textContent = 'Home';
+        headerSection.appendChild(homeButton);
+
+        const compareButton = document.createElement('button');
+        compareButton.textContent = 'Compare';
+        headerSection.appendChild(compareButton);
     }
 });
