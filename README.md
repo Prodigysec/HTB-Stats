@@ -24,10 +24,10 @@ A web application where HackTheBox users can track their global ranking, compare
 ![Landing page](Images/LandingPage.png.png)
 
 - Player Statistics
-![Player Stats](Images/PlayerStats1.png)
+![Player Stats](Images/PlayerStats.png)
 
 - Player Statistics: Respect
-![Player Stats](Images/PlayerStats2.png)
+![Player Stats](Images/PlayerStats3.png)
 
 ## License
 MIT License
