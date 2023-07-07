@@ -15,6 +15,11 @@ A web application where HackTheBox users can track their global ranking, compare
 5. Install Live Server extension for Vs Code and ensure it is running.
 6. Open your browser and navigate to the following url: http://127.0.0.1:5500/ . The site should be up and running.
 
+## Minor Fixes
+`CORS issues`
+1. The browser blocks any cross origin requests to the HTB API.
+  - This can be circumvented through using an extension that allows you to perform cross-domain requests
+
 ## Technologies Used
 - HTML
 - CSS
