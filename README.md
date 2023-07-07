@@ -9,9 +9,11 @@ A web application where HackTheBox users can track their global ranking, compare
 
 ## Setup Installation
 1. Copy the Github Repo url.
-2. Open a terminal on your local environment and clone the repo.
-3. Install Live Server extension for Vs Code and ensure it is running.
-4. Open your browser and enter the following url: http://127.0.0.1:5500/
+2. Open a terminal on your local environment, clone the repo and move inside the directory (HTB-Stats).
+3. Create an account on HackTheBox. Head over to the following endpoint: https://app.hackthebox.com/profile/settings then create an app token that you'll need to perform requests to the HTB API.
+4. Open the index.html file available in the directory and set the value of `YOUR_AUTH_TOKEN` to the app token from step 3 above
+5. Install Live Server extension for Vs Code and ensure it is running.
+6. Open your browser and navigate to the following url: http://127.0.0.1:5500/ . The site should be up and running.
 
 ## Technologies Used
 - HTML
